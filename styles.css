@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap');
+
+
+/* Root Styles */
+:root {
+    --background-color: #0a0d12;
+    --text-color: #ffffff;
+    --special-color: #4160DD;
+    --btn-bg: #4160DD;
+    --btn-hover-bg: #324AB2;
+    --horizontal-padding: 120px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", serif;
+}
+
+p {
+    font-family: "DM Sans", serif;
+}
+
+[DM-sans] {
+    font-family: "DM Sans", serif;
+}
+
+/* Page Styles */
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Header (fixed at top) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--horizontal-padding);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--background-color);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Lexend", serif;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: var(--special-color);
+}
+
+/* Home Section */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--horizontal-padding);
+  height: 75vh;
+  margin-top: 100px; /* Makes room for the fixed header */
+  scroll-margin-top: 100px;
+}
+
+.home-text {
+  max-width: 50%;
+  margin-top: -100px;
+}
+
+.home-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+.home-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 30px;
+  padding-right: 20px;
+}
+
+.download-label {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--special-color);
+  text-decoration: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.download-label:hover {
+  text-decoration: underline;
+}
+
+.download-btn {
+  display: inline-block;
+  background: var(--btn-bg);
+  color: #fff;
+  padding: 16px 40px;
+  font-size: 17px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: var(--btn-hover-bg);
+}
+
+.home-image {
+  width: 800px;
+}
+
+.home-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 var(--horizontal-padding);
+  margin-top: 180px; /* Adjust as needed to add or remove vertical space */
+  scroll-margin-top: 250px;
+}
+
+.features-left {
+  width: 60%;
+}
+
+.features-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.features-left p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.features-right {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px; /* Some spacing from top if desired */
+}
+
+.features-logo {
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+.features-right h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Responsive (max-width: 900px) */
+@media (max-width: 900px) {
+  .header, .home, .features {
+    padding: 0 60px;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding-top: 100px;
+  }
+
+  .home-text {
+    max-width: 100%;
+  }
+
+  .home-image {
+    max-width: 80%;
+    margin-top: 30px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .features-left, .features-right {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+    /* Model Architecture Section */
+.model-architecture {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--horizontal-padding);
+    min-height: 100vh; /* So it fills the viewport, can remove if not needed */
+    margin-top: 150px; /* Adjust as needed to add or remove vertical space */
+}
+
+.model-architecture-image {
+  flex: 1;
+  text-align: center;
+}
+
+.model-architecture-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.model-architecture-text {
+  flex: 1;
+  padding-left: 40px;
+  margin-top: -150px;
+}
+
+.model-architecture-text h2 {
+  font-size: 28px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.model-architecture-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Training Pipeline Section */
+.training-pipeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--horizontal-padding);
+  margin-bottom: 160px;
+}
+
+.training-pipeline-text {
+  flex: 1;
+  padding-right: 40px;
+  margin-top: -150px;
+}
+
+.training-pipeline-text h2 {
+  font-size: 28px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.training-pipeline-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.training-pipeline-image {
+  flex: 1;
+  text-align: center;
+}
+
+.training-pipeline-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Container for the entire Performance Section */
+.performance-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px var(--horizontal-padding);
+  scroll-margin-top: 100px;
+}
+
+/* Left side text */
+.performance-text {
+  flex: 1;
+  max-width: 45%;
+  margin-right: 40px;
+}
+
+.performance-text h2 {
+  font-size: 28px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.performance-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
+.benchmark-section {
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  background: #0D1117;
+  border: #2C3440 solid 2px;
+  padding: 30px 60px;
+  border-radius: 10px;
+  margin-right: 50px;
+}
+
+.benchmark-chart {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.benchmark-chart h3{
+    margin-bottom: 20px;
+}
+
+.bar-group {
+    text-align: center;
+    width: 150px;
+}
+
+.bars {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 400px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.bar {
+    width: 60px;
+    margin: 0; /* No margin between bars */
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+
+
+.pytorch { background: #20262f; }
+.mlc-native { background: #4763e0; }
+.mlc-lightning { background: #374ca8; }
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.color-box {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.color-box.pytorch { background: #20262f; }
+.color-box.mlc-native { background: #4763e0; }
+.color-box.mlc-lightning { background: #374ca8; }
+
+.download {
+  text-align: center;
+  padding: 40px 0;
+  margin-bottom: 20vh;
+}
+
+.download h2{
+  text-align: center;
+  padding: 40px 20px;
+}
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  
+}
+
+.download-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-download-btn {
+  background: #161b22;
+  border: 1px solid #2C3440;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.second-download-btn:hover {
+  background: #1c222b;
+}
+
+.second-download-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.coming-soon {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #888;
+}
+
+.footer {
+  background: #161b22;
+  border-top: 1px solid #2C3440;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666;
+}
