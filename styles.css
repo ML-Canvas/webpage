@@ -87,7 +87,7 @@ body {
 
 .home-text {
   max-width: 50%;
-  margin-top: -100px;
+  margin-top: -85px;
 }
 
 .home-text h1 {
@@ -135,7 +135,7 @@ body {
 }
 
 .home-image {
-  width: 800px;
+  width: 1200px;
 }
 
 .home-image img {
@@ -236,6 +236,7 @@ body {
 .model-architecture-image {
   flex: 1;
   text-align: center;
+  width: 1200px;
 }
 
 .model-architecture-image img {
@@ -444,7 +445,7 @@ body {
   background: #1c222b;
 }
 
-.second-download-btn.disabled {
+.disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
