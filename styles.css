@@ -87,7 +87,7 @@ body {
 
 .home-text {
   max-width: 50%;
-  margin-top: -85px;
+  margin-top: -35px;
 }
 
 .home-text h1 {
@@ -138,9 +138,13 @@ body {
   width: 1200px;
 }
 
+[image] {
+  border: #2C3440 solid 2px;
+  border-radius: 8px;
+}
+
 .home-image img {
   width: 100%;
-  border-radius: 8px;
 }
 
 /* Features Section */
@@ -150,7 +154,7 @@ body {
   align-items: flex-start;
   padding: 0 var(--horizontal-padding);
   margin-top: 180px; /* Adjust as needed to add or remove vertical space */
-  scroll-margin-top: 250px;
+  scroll-margin-top: 270px;
 }
 
 .features-left {
@@ -248,7 +252,7 @@ body {
 .model-architecture-text {
   flex: 1;
   padding-left: 40px;
-  margin-top: -150px;
+  margin-top: -130px;
 }
 
 .model-architecture-text h2 {
@@ -275,7 +279,7 @@ body {
 .training-pipeline-text {
   flex: 1;
   padding-right: 40px;
-  margin-top: -150px;
+  margin-top: -140px;
 }
 
 .training-pipeline-text h2 {
@@ -293,6 +297,8 @@ body {
 .training-pipeline-image {
   flex: 1;
   text-align: center;
+  width: 1000px;
+  margin-top: -60px;
 }
 
 .training-pipeline-image img {
@@ -365,15 +371,15 @@ body {
 }
 
 .bar {
-    width: 60px;
-    margin: 0; /* No margin between bars */
-    text-align: center;
-    font-size: 12px;
-    padding-top: 5px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    color: white;
+  width: 60px;
+  margin: 0; /* No margin between bars */
+  text-align: center;
+  font-size: 12px;
+  padding-top: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
 }
 
 
